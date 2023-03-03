@@ -83,7 +83,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="60dp"
                 android:layout_marginEnd="10dp"
-                android:backgroundTint="@color/button_color"
+                android:backgroundTint="#997C9A92"
                 android:onClick="Entrance"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
