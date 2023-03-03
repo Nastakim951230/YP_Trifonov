@@ -100,6 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/alegreya"
+                android:onClick="Register"
                 android:text="Еще нет аккаунта? Зарегистрируйтесь"
                 android:textColor="@color/white"
                 android:textSize="20dp"
