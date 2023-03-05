@@ -53,6 +53,7 @@
                 android:layout_marginTop="75dp"
                 android:backgroundTint="@color/edittext"
                 android:hint="Email"
+                android:textColor="@color/edittext"
                 android:textColorHint="@color/edittext"></EditText>
 
             <EditText
@@ -62,6 +63,8 @@
                 android:layout_marginTop="25dp"
                 android:backgroundTint="@color/edittext"
                 android:hint="Пароль"
+                android:inputType="textPassword"
+                android:textColor="@color/edittext"
                 android:textColorHint="@color/edittext"></EditText>
 
             <Button

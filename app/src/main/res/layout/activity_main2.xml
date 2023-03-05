@@ -24,6 +24,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
+        android:onClick="Menu"
         android:scaleType="fitXY"
         android:src="@drawable/hamburger"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,11 +36,12 @@
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
+        android:onClick="profile"
         android:scaleType="fitXY"
-        app:shapeAppearanceOverlay="@style/RoundedSquare"
-        android:src="@drawable/icon_logo"
+        android:src="@drawable/koala"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></com.google.android.material.imageview.ShapeableImageView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"></com.google.android.material.imageview.ShapeableImageView>
 
     <TextView
         android:id="@+id/privetstvie"
@@ -65,18 +67,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/privetstvie"></TextView>
 
-    <androidx.viewpager.widget.ViewPager
+    <ListView
         android:id="@+id/horizontalList"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vopros"></androidx.viewpager.widget.ViewPager>
+        app:layout_constraintTop_toBottomOf="@+id/vopros"></ListView>
 
     <ListView
-        android:id="@+id/ListView"
+        android:id="@+id/ListQuotes"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/Nav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,6 +101,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginBottom="7dp"
+        android:onClick="Listen"
         android:scaleType="fitXY"
         android:src="@drawable/nav"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -108,6 +113,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginBottom="7dp"
+        android:onClick="profile"
         android:scaleType="fitXY"
         android:src="@drawable/profile"
         app:layout_constraintBottom_toBottomOf="parent"
